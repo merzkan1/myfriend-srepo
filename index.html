@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRESENTATION FİLE</title>
+    <title>PRESENTATION FILE</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -13,6 +13,7 @@
             padding: 50px;
             margin: 0;
             overflow: hidden;
+            position: relative;
         }
 
         #content {
@@ -28,12 +29,43 @@
             font-size: 50px;
             color: #00ff00;
         }
+
+        #viruses {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .virus {
+            display: inline-block;
+            font-size: 70px;
+            margin: 20px;
+        }
+
+        #bottom-text {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            text-align: right;
+            width: 50%;
+            margin-right: 50px;
+        }
     </style>
 </head>
 <body>
     <div id="content">
-        <h1>LİNK ALERT!!!</h1>
-        <p><code>"BULDUĞUN HER LİNKE TIKLAMAMALISIN"</code> <span>😈</span></p>
+        <div id="viruses">
+            <div class="virus">😈</div>
+            <div class="virus">😈</div>
+            <div class="virus">😈</div>
+            <div class="virus">😈</div>
+            <div class="virus" style="font-size: 100px;">😈</div>
+        </div>
+        <div id="bottom-text">
+            <h1>LİNK ALERT!!!</h1>
+            <p><code>"Do not press every link from research, make sure it comes from a safe source."</code></p>
+        </div>
     </div>
 </body>
 </html>
