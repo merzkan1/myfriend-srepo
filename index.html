@@ -37,18 +37,22 @@
         }
 
         #virus {
-            font-size: 200px;
-            position: absolute;
-            width: 300px; /* Genişlik ayarı */
-            height: 300px; /* Yükseklik ayarı */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ff0000; /* Renk ayarı */
-            border-radius: 50%; /* Yuvarlak şekil için */
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+      
+    font-size: 400px; /* Virüs boyutunu iki katına çıkar */
+    position: absolute;
+    width: 400px; /* Genişlik ayarı */
+    height: 400px; /* Yükseklik ayarı */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* İkon rengi */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none; /* Arkaplan rengini kaldırır */
+    border: none; /* Kenarlık rengini kaldırır */
+}
+
         }
 
         #bottom-text {
@@ -63,7 +67,7 @@
 </head>
 <body>
     <div id="content">
-        <div id="virus">😈</div>
+        <div id="virus">👾</div>
         <div id="bottom-text">
         <p><code>"Do not press every link from research, make sure it comes from a safe source."</code></p>
         </div>
