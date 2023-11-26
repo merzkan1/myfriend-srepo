@@ -26,19 +26,50 @@
         }
 
         h1, p, code, span {
-            font-size: 20px; /* Yazıyı küçültmek için font-size değerini düşürdüm */
+            font-size: 30px;
             color: #00ff00;
         }
 
         #viruses {
-           position: fixed;
-            bottom: 50;
-            right: 30;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
         }
 
         .virus {
-            font-size: 40px; /* Virüsleri biraz büyüttüm */
+            font-size: 40px;
             margin: 10px;
+            position: absolute;
+        }
+
+        .virus1 {
+            top: 0;
+            right: 0;
+        }
+
+        .virus2 {
+            bottom: 0;
+            left: 0;
+        }
+
+        .virus3 {
+            top: 0;
+            left: 0;
+        }
+
+        .virus4 {
+            bottom: 0;
+            right: 0;
+        }
+
+        .virus5 {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         #bottom-text {
@@ -54,11 +85,11 @@
 <body>
     <div id="content">
         <div id="viruses">
-            <div class="virus">😈</div>
-            <div class="virus">😈</div>
-            <div class="virus">😈</div>
-            <div class="virus">😈</div>
-            <div class="virus">😈</div>
+            <div class="virus virus1">😈</div>
+            <div class="virus virus2">😈</div>
+            <div class="virus virus3">😈</div>
+            <div class="virus virus4">😈</div>
+            <div class="virus virus5">😈</div>
         </div>
         <div id="bottom-text">
             <h1>LİNK ALERT!!!</h1>
