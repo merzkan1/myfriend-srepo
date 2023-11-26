@@ -31,46 +31,26 @@
         }
 
         body {
-    position: relative;
-    height: 100vh;
-    margin: 0;
-}
+            position: relative;
+            height: 100vh;
+            margin: 0;
+        }
 
-.object {
-    position: absolute;
-    width: 30px; /* Genişlik ayarı */
-    height: 30px; /* Yükseklik ayarı */
-    font-size: 20px; /* İkonun boyutu */
-    display: flex;
-    background-color: #ff0000; /* Renk ayarı */
-    border-radius: 50%; /* Yuvarlak şekil için */
-    color: #ffffff; /* İkon rengi */
-}
-
-#object1 {
-    top: 5px;
-    left: 10px;
-}
-
-#object2 {
-    top: 70px;
-    left: 10px;
-}
-
-#object3 {
-    top: 5px;
-    left: 70px;
-}
-
-#object4 {
-    top: 70px;
-    left: 70px;
-}
-
-#object5 {
-    top: 50px;
-    left: 50px;
-}
+        #virus {
+            font-size: 200px;
+            position: absolute;
+            width: 200px; /* Genişlik ayarı */
+            height: 200px; /* Yükseklik ayarı */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff0000; /* Renk ayarı */
+            border-radius: 50%; /* Yuvarlak şekil için */
+            color: #ffffff; /* İkon rengi */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
 
         #bottom-text {
             position: fixed;
@@ -84,13 +64,7 @@
 </head>
 <body>
     <div id="content">
-        <div id="viruses">
-            <div class="virus virus1">😈</div>
-            <div class="virus virus2">😈</div>
-            <div class="virus virus3">😈</div>
-            <div class="virus virus4">😈</div>
-            <div class="virus virus5">😈</div>
-        </div>
+        <div id="virus">😈</div>
         <div id="bottom-text">
             <h1>LİNK ALERT!!!</h1>
             <p><code>"Do not press every link from research, make sure it comes from a safe source."</code></p>
